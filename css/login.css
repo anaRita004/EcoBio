@@ -51,3 +51,25 @@
     color: #4f4d4d;
     cursor: auto;
 }
+
+/* Botão Voltar */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: rgba(76, 175, 80, 0.6); /* Verde claro com opacidade */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8; /* Torna o botão um pouco transparente */
+}
+
+.back-button:hover {
+    background-color: #1e5128; /* Verde escuro no hover */
+    opacity: 1; /* Aumenta a opacidade no hover para destacá-lo */
+}
+

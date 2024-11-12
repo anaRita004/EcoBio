@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Memória Login</title>
-    <link rel="icon" type="image/x-icon" href="../imagens/Logo.png">
+    <link rel="icon" type="image/x-icon" href="imagens/Logo.png">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
+    <!-- Botão Voltar -->
+    <button class="back-button" onclick="window.history.back()">Voltar</button>
+
     <form class="login-form">
         <div class="login-header">
             <img src="./imagens/Logo.png" alt="Logo">
@@ -16,8 +19,7 @@
         </div>
 
         <input type="text" placeholder="Nome" class="login-input">
-        <button tyle="submit" class="login-button" disabled>Jogar</button>
-
+        <button type="submit" class="login-button" disabled>Jogar</button>
     </form>
 
     <script src="./js/login.js"></script>
