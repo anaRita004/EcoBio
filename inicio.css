@@ -1,0 +1,313 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F6F1E7; 
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-neutral-0: #512600;
+    --color-neutral-10: #907761;
+    --color-neutral-30: #ffffff;
+    --color-neutral-40: #f5f5f5;
+    --color-footer-black: #000000;
+}
+
+header {
+    background-color: #115C21; 
+    padding: 14px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adiciona sombra */
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.brand-name {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 3vw;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 2vw;
+}
+
+.menu-toggle {
+    display: none; 
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.ul {
+    list-style-type: none; 
+    padding: 0;
+    display: flex;
+    margin: 0;
+    margin-right: 3vw;
+    justify-content: flex-start; 
+}
+
+.ul li {
+    margin-left: 2vw;
+    margin-top: 1.5vw;
+}
+
+.ul a {
+    text-decoration: none; 
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s; 
+}
+
+/* Efeito de hover no menu */
+nav ul a::after {
+    content: "";
+    background-color: #ffffff;
+    height: 3px;
+    width: 0%; 
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+/* Estilização da seção topo do site */
+section.topo-site {
+    padding: 40px 4%; 
+}
+
+.flex {
+    display: flex; 
+    align-items: center; 
+}
+
+.txt-topo-site {
+    flex: 1;
+}
+
+/* Animação para a imagem flutuar */
+@keyframes float { 
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Estilizando o título */
+.topo-site h1 {
+    color: #1a6138;
+    font-size: 33px;
+    line-height: 60px; 
+}
+
+.topo-site .txt-topo-site p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555; 
+}
+
+.btn-contato {
+    margin-top: 20px; 
+}
+
+.btn-contato button {
+    background-color:  #1a6138; 
+    color: #fff; 
+    border: none; 
+    padding: 10px  70px;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+h2.titulo {
+    color: #734225;
+    font-size: 30px;
+    text-align: center; 
+}
+
+.btn-contato button:hover {
+    background-color: #5a9e71 ; 
+}
+
+/* Aplique a animação diretamente à imagem */
+.img-topo-site img {
+    width: 100%; 
+    height: auto;  
+    max-height: none; 
+    animation: float 3s ease-in-out infinite;  
+}
+
+/* Estilo do contêiner da imagem */
+.img-topo-site {
+    flex: 0 0 35%;  
+    max-width: 330px;  
+    overflow: hidden; 
+}
+
+/* Estilização para as imagens lado a lado */
+section .especialidades {
+    padding: 60px 4%; 
+    text-align: center; 
+}
+
+section .especialidades .flex {
+    display: flex;
+    justify-content: space-between; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+section .especialidades .titulo-imagem {
+    flex: 1; 
+    max-width: 32%; 
+    text-align: center; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Efeito de hover nas imagens */
+section .especialidades .titulo-imagem:hover {
+    transform: scale(1.05); 
+}
+
+section .especialidades .titulo-imagem img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Interface e container flexível */
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Flex container para alinhar imagem e texto lado a lado */
+.flex {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+/* Estilos para a imagem */
+.img-sobre {
+    flex: 1; 
+    max-width: 500px;
+    margin-top: 20px; 
+}
+
+.img-sobre img {
+    width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+}
+
+
+/* Estilos para o texto */
+.txt-beneficios {
+    flex: 2; 
+    padding-left: 20px; 
+    max-width: 700px;
+}
+
+.txt-beneficios h1 {
+    color: #734225;
+    font-size: 32px;
+}
+
+.txt-beneficios p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555; 
+}
+
+/* Ajustando a altura do card */
+.card-list .card-item {
+    list-style: none;
+    display: inline-block;
+    margin-right: 16px; 
+    width: 280px; 
+}
+
+/* Estilo do link do card */
+.card-list .card-item .card-link {
+    width: 400px;
+    display: block;
+    background: #ffffff;
+    padding: 8px 12px; 
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid #DDE4FF; 
+    box-shadow: 0 6px 6px rgba(81, 38, 0, 0.1); 
+    transition: 0.2s ease;
+}
+
+
+/* Hover no card */
+.card-list .card-item .card-link:hover {
+    border-color: #5a9e71; /* Verde mais suave para hover */
+}
+
+/* Estilo da imagem do card */
+.card-list .card-link .card-imagem {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+}
+
+/* Badge (etiqueta) no card */
+.card-list .card-link .badge {
+    color: #115C21; 
+    padding: 6px 12px; 
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 8px 0 10px; 
+    background: #DDE4FF; 
+    width: fit-content;
+    border-radius: 20px; 
+}
+
+
+/* Título do card */
+.card-list .card-link .card-titulo {
+    font-size: 0.9rem; 
+    color: #555; 
+    font-weight: 530;
+    margin-bottom: 10px; 
+    line-height: 1.4; 
+}
+
+/* Ajustando o botão para o novo tamanho do card */
+.card-list .card-link .card-button {
+    height: 30px;
+    width: 30px;
+    color: #5a9e71; 
+    border-radius: 50%;
+    margin: 15px 0 5px; 
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5a9e71; 
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
