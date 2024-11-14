@@ -238,76 +238,67 @@ section .especialidades .titulo-imagem img {
     color: #555; 
 }
 
-/* Ajustando a altura do card */
 .card-list .card-item {
     list-style: none;
-    display: inline-block;
-    margin-right: 16px; 
-    width: 280px; 
 }
 
-/* Estilo do link do card */
+.card-wrapper {
+    max-width: 1100px;
+    margin: 0 auto 35px; /* Centraliza o carrossel horizontalmente */
+    padding: 20px 10px;
+    overflow: hidden;
+    padding-right: 50px; /* Ajuste para mover as cartas para a direita */
+}
+
 .card-list .card-item .card-link {
-    width: 400px;
+    user-select: none;
     display: block;
-    background: #ffffff;
-    padding: 8px 12px; 
+    background: #fff;
+    padding: 18px;
     border-radius: 12px;
     text-decoration: none;
-    border: 2px solid #DDE4FF; 
-    box-shadow: 0 6px 6px rgba(81, 38, 0, 0.1); 
-    transition: 0.2s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2 ease;
 }
 
-
-/* Hover no card */
 .card-list .card-item .card-link:hover {
-    border-color: #5a9e71; /* Verde mais suave para hover */
+    border-color: #1a6138;
 }
 
-/* Estilo da imagem do card */
 .card-list .card-link .card-imagem {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 10px; 
-    margin-top: 10px; 
 }
 
-/* Badge (etiqueta) no card */
 .card-list .card-link .badge {
-    color: #115C21; 
-    padding: 6px 12px; 
-    font-size: 0.85rem;
+    color: #1a6138;
+    padding: 8px;
+    font-size: 0.95rem;
     font-weight: 500;
-    margin: 8px 0 10px; 
-    background: #DDE4FF; 
+    margin: 16px 0 18px;
+    background-color: #dde4ff;
     width: fit-content;
-    border-radius: 20px; 
+    border-radius: 50px;
 }
 
-
-/* Título do card */
 .card-list .card-link .card-titulo {
-    font-size: 0.9rem; 
-    color: #555; 
-    font-weight: 530;
-    margin-bottom: 10px; 
-    line-height: 1.4; 
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
 }
 
-/* Ajustando o botão para o novo tamanho do card */
-.card-list .card-link .card-button {
-    height: 30px;
-    width: 30px;
-    color: #5a9e71; 
-    border-radius: 50%;
-    margin: 15px 0 5px; 
-    background: none;
-    cursor: pointer;
-    border: 2px solid #5a9e71; 
-    transform: rotate(-45deg);
-    transition: 0.4s ease;
-}
-
+/* Cor das setas de navegação */
+.swiper-button-next, .swiper-button-prev {
+    color: #7f3e21; 
+    background-color: transparent;
+    border: none; 
+    font-size: 24px;
+  }
+  
+  .swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #320000; 
+  }
+  
