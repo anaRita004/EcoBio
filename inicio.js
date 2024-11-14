@@ -17,28 +17,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 //Fim ícone de menu
 
-
 new Swiper('.card-wrapper', {
   loop: true,
-  spaceBetween: 20,  // Ajuste o espaçamento entre os cards conforme necessário
-  slidesPerView: 3,  // Exibe 3 cards por vez
-  centeredSlides: true,  // Garante que o carrossel seja centralizado
+  spaceBetween: 55,
+  slidesPerView: 3,
+  centeredSlides: true,
 
-  // Pagination bullets
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  // Breakpoints para responsividade
   breakpoints: {
     0: {
-      slidesPerView: 1
+      slidesPerView: 1,
+      centeredSlides: false
     },
     768: {
       slidesPerView: 2

@@ -6,10 +6,12 @@
     <!--Link do Google Fonts para os ícones-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
 
+    <!--Link dos ícones do Instagram WhatsApp Facebook -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!--Link do Swiper JS CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-    <link rel="stylesheet" href="">
     <title>Eco Bio</title>
     <link rel="icon" type="image/x-icon" href="imagens/Logo.png">
     <link rel="stylesheet" href="inicio.css">
@@ -26,7 +28,7 @@
                 </div>
                 <ul class="ul" id="menu">
                     <!-- Itens de navegação -->
-                    <li><a href="login/cadastro.html">LOGIN/CADASTRO</a></li>
+                    <li><a href="pages/cadastro.html">LOGIN/CADASTRO</a></li>
                     <li><a href="index.html">JOGO</a></li>
                     <li><a href="sobrenos.html">SOBRE NÓS</a></li>
                 </ul>
@@ -35,7 +37,6 @@
     </header>
        
     <main>
-        <!-- Seção principal com destaque para tratamentos -->
         <section class="topo-site">
             <div class="interface">
                 <div class="flex">
@@ -94,6 +95,7 @@
 
         <div class="container swiper">
             <div class="card-wrapper">
+                <h2 class="carrossel-titulo">FIQUE POR DENTO</h2>
                 <ul class="card-list swiper-wrapper">
                     <li class="card-item swiper-slide">
                         <a href="" class="card-link">
@@ -131,7 +133,7 @@
                         <a href="" class="card-link">
                             <img src="imagens/reciclagem-moda.png" alt="" class="card-imagem">
                             <p class="badge moda">Moda reciclada</p>
-                            <h2 class="card-titulo">Criar peças únicas a partir de materiais reutilizados é a tendência que transforma a indústria da moda, reduzindo o impacto ambiental e promovendo a criatividade</h2>
+                            <h2 class="card-titulo">Criar peças únicas a partir de materiais reutilizados é a tendência que transforma a indústria da moda, reduzindo o impacto ambiental e promovendo a inovação.</h2>
                         </a>
                     </li>
                     <!--carrossel imagem  6 (Moda Criativa)--> 
@@ -148,10 +150,91 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-        </div>
+        </div> 
+        </main>
+        <footer>
+            <div id="footer_content">
+                <!-- Seção de Contato e Redes Sociais -->
+                <div id="footer_contacts">
+                    <h1>Eco Bio</h1>
+                    <p>Conectando você a um futuro sustentável e consciente.</p>
+    
+                    <div id="footer_social_media">
+                        <!-- Links para redes sociais da clínica -->
+                        <a href="https://www.instagram.com/ecobio.oficial/" class="footer-link" id="instagram" title="Siga-nos no Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+    
+                        <a href="https://www.facebook.com/senaisp.moocagrafica/" class="footer-link" id="facebook" title="Curta nossa página no Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+    
+                        <a href="https://web.whatsapp.com/" class="footer-link" id="whatsapp" title="Envie uma mensagem pelo WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Links úteis sobre a clínica -->
+                <ul class="footer-list">
+                    <li>
+                        <h3>Sustentabilidade</h3>
+                    </li>
+                    <li>
+                        <a href="quemsomos.html" class="footer-link">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="projeto.html" class="footer-link">Nossos Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Equipe</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Contato</a>
+                    </li>
+                </ul>
+    
+                <!-- Patrocionadores com dicas e informações -->
+                <ul class="footer-list">
+                    <li>
+                        <h3>Patrocinadores</h3>
+                    </li>
+                    <li>
+                        <a href="https://www.lojafabercastell.com.br/?gad_source=1&gclid=CjwKCAiA3Na5BhAZEiwAzrfagANtdJYHfFgkpNGvGI1VZOyJsDFLeOBsVrI58XELjAXalN4nGLkTeBoCLmUQAvD_BwE" class="footer-link">Faber-Castell</a>
+                    </li>
+                    <li>
+                        <a href="https://sp.senai.br/unidade/grafica/" class="footer-link">SENAI Mocca - Gráfico</a>
+                    </li>
+                    <li>
+                        <a href="https://www.brasilsolidario.org.br/" class="footer-link">Instituto Brasil Solidário</a>
+                    </li>
+                    </li>
+                </ul>
+    
+                <!-- Assine nossa newsletter sobre meio ambiente -->
+                <div id="footer_subscribe">
+                    <h3>Assine Nossa Newsletter</h3>
+    
+                    <p>
+                        Receba dicas de sustentabilidade e novidades do projeto Eco Bio diretamente no seu e-mail.
+                    </p>
+    
+                    <div id="input_group">
+                        <input type="email" id="email" placeholder="Seu e-mail">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Direitos autorais -->
+            <div id="footer_copyright">
+                &#169; 2024 Eco Bio. Todos os direitos reservados.
+            </div>
+        </footer>
         <!--Link do Swiper JS CSS-->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  
         <script src="inicio.js"></script>
     </body>
     </html>
