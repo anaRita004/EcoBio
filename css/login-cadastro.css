@@ -1,0 +1,429 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F6F1E7; 
+  margin: 0;
+  padding: 0;
+}
+
+/*Cabeçalho*/
+
+header {
+  background-color: #115C21; 
+  padding: 14px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adiciona sombra */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.brand-name {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 3vw;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 2vw;
+}
+
+.menu-toggle {
+  display: none; 
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.ul {
+  list-style-type: none; 
+  padding: 0;
+  display: flex;
+  margin: 0;
+  margin-right: 3vw;
+  justify-content: flex-start; 
+}
+
+.ul li {
+  margin-left: 2vw;
+  margin-top: 1.5vw;
+}
+
+.ul a {
+  text-decoration: none; 
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  transition: 0.3s; 
+}
+
+/* Efeito de hover no menu */
+nav ul a::after {
+  content: "";
+  background-color: #ffffff;
+  height: 3px;
+  width: 0%; 
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+nav ul a:hover::after {
+  width: 100%;
+}
+
+/* Login */ 
+
+/* Centralizar e ajustar tamanho do formulário */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinha o formulário para o topo */
+  height: 100vh; /* Mantém a altura total da tela */
+  background-color: #F6F1E7; /* Cor de fundo opcional */
+  padding-top: 50px; /* Adiciona espaço no topo */
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 20px; /* Reduzi o padding */
+  width: 380px; /* Diminuído de 450px */
+  border-radius: 20px;
+}
+
+::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  
+flex-column > label {
+  color: #151717;
+  font-weight: 600;
+}
+
+.inputForm {
+  border: none; 
+  border-radius: 10px; 
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  transition: 0.2s ease-in-out;
+  background-color: #f5f5f5; 
+}
+
+.input {
+  margin-left: 10px;
+  border: none; /* Remove borda adicional */
+  width: 100%;
+  height: 100%;
+  background: transparent; /* Garante fundo transparente */
+}
+
+.input:focus {
+  outline: none; 
+}
+
+.inputForm:focus-within {
+  border: 2px solid #778c43; 
+  background-color: #ffffff;
+}
+
+  
+.input {
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+  
+.input:focus {
+  outline: none;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px; 
+}
+
+inputForm:focus-within {
+  border: 1.5px solid #778c43;
+}
+  
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+  
+.flex-row > div > label {
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+}
+
+/*cadastra-se e esqueci a senha*/
+.span {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #203500;
+  font-weight: 500;
+  cursor: pointer;
+}
+  
+.button-submit {
+  margin: 20px 0 10px 0;
+  background-color: #203500;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none; /* Remove o sublinhado */
+  text-align: center;    /* Centraliza o texto */
+  display: flex;         /* Garante centralização no flexbox */
+  align-items: center;   /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+  
+
+/*Botão da Google e da Apple*/
+.btn {
+  width: 100%;
+  margin-top: 10px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+  border: 1px solid #ededef;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border: 1px solid #778c43;
+}
+.inputForm {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+.password-field .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+/* Fim do Login */
+
+/*Rodaé*/
+
+:root {
+  --color-neutral-0: #203500;
+  --color-neutral-10: #778c43;
+  --color-neutral-30: #ffffff;
+  --color-neutral-40: #f5f5f5;
+
+}
+
+main {
+  height: 90vh;
+}
+
+footer {
+  width: 100%;
+  color: var(--color-neutral-40);
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+#footer_content {
+  background-color: var(--color-neutral-10);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-neutral-40);
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.8;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267b3;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link {
+  color: var(--color-neutral-30);
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+  color: #341d08;
+}
+
+#footer_subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#footer_subscribe p {
+  color: var(--color-neutral-30);
+}
+
+#input_group {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-neutral-0);
+  border-radius: 4px;
+}
+
+#input_group input {
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#input_group button {
+  background-color: #7f37c9;
+  border: none;
+  color: var(--color-neutral-40);
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#input_group button:hover {
+  opacity: 0.8;
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-neutral-0);
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+
+/* Ajustes para telas médias (tablets) */
+@media screen and (max-width: 768px) {
+  /* Configuração do layout de grade no rodapé */
+  #footer_content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  }
+}
+
+/* Ajustes para telas pequenas (celulares) */
+@media screen and (max-width: 480px) {
+  /* Configuração do layout do rodapé em coluna */
+  #footer_content {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 15px;
+  }
+
+  /* Estilos adicionais para centralizar conteúdo no rodapé */
+  #footer_contacts,
+  #footer_social_media,
+  .footer-list,
+  #footer_subscribe {
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  /* Estilos para redes sociais */
+  #footer_social_media {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      font-size: 1.5rem;
+  }
+
+  /* Estilos para o formulário de inscrição (newsletter) */
+  #input_group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+  }
+
+  #input_group input {
+      width: 80%;
+      padding: 0.5rem;
+      font-size: 1rem;
+  }
+
+  #input_group button {
+      width: 50%;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+  }
+}
